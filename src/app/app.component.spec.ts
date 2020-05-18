@@ -1,35 +1,35 @@
-import { TestBed, async } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
-import { AppComponent } from './app.component';
+import { TestBed, async } from "@angular/core/testing";
+import { RouterTestingModule } from "@angular/router/testing";
 
-describe('AppComponent', () => {
+// local component import
+import { AppComponent } from "./app.component";
+
+describe("AppComponent", () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
-      declarations: [
-        AppComponent
-      ],
+      imports: [RouterTestingModule],
+      declarations: [AppComponent],
     }).compileComponents();
   }));
 
-  it('should create the app', () => {
+  it("should create the app", () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app).toBeTruthy();
+    expect(app).toBeTruthy(); // Jest assertion ?
   });
 
   it(`should have as title 'angular-crash-todolist'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('angular-crash-todolist');
+    expect(app.title).toEqual("angular-crash-todolist");
   });
 
-  it('should render title in a h1 tag', () => {
+  it("should render title in a h2 tag", () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to angular-crash-todolist!');
+    expect(compiled.querySelector("h2").textContent).toContain(
+      "Welcome to My angular-crash-todolist!"
+    );
   });
 });

@@ -1,18 +1,20 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+// main module import
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+// routing
+import { AppRoutingModule } from "./app-routing.module";
 
+// local component imports
+import { AppComponent } from "./app.component";
+import { TodosComponent } from "./components/todos/todos.component";
+
+// define the main module
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  // in declarations [], list all app components here -- Todos got auto added from ng generate
+  declarations: [AppComponent, TodosComponent],
+  imports: [BrowserModule, AppRoutingModule],
+  providers: [], // services for our module
+  bootstrap: [AppComponent], // init de components on start
 })
-export class AppModule { }
+export class AppModule {}
