@@ -1,6 +1,8 @@
+// Testing Lib Imports
 import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { TodosComponent } from "./todos.component"; // the .ts file we are testing
+// Import the Component you are testing
+import { TodosComponent } from "./todos.component";
 
 describe("TodosComponent", () => {
   let component: TodosComponent;

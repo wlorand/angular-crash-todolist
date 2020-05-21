@@ -1,5 +1,7 @@
+// Core Imports
 import { Component, OnInit } from "@angular/core";
 
+// Define / Configure the Todos Component
 @Component({
   selector: "app-todos",
   templateUrl: "./todos.component.html",
@@ -11,4 +13,6 @@ export class TodosComponent implements OnInit {
 
   constructor() {} // services here
   ngOnInit() {} // init lifecycle method stuff here
+
+  ngOnDestroy() {} // cleanup
 }
