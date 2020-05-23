@@ -13,12 +13,13 @@ import { AppRoutingModule } from "./app-routing.module";
 // local component imports
 import { AppComponent } from "./app.component";
 import { TodosComponent } from "./components/todos/todos.component";
+import { TodoItemComponent } from './components/todo-item/todo-item.component';
 
 // define / config the main module with a @Decorator
 @NgModule({
-  declarations: [AppComponent, TodosComponent], // declare components
+  declarations: [AppComponent, TodosComponent, TodoItemComponent], // declare components
   imports: [BrowserModule, AppRoutingModule], // declare imports
-  providers: [], // declare services
+  providers: [], // declare services for your module
   bootstrap: [AppComponent], // Boot-Up Selective Components
 })
 

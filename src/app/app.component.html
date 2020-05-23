@@ -2,7 +2,10 @@
   <!-- Render the Todos component -->
   <app-todos></app-todos>
 
-  <div style="text-align: right;">
-    <p>copyright {{ author.toUpperCase() }}</p>
+  <div style="text-align: center;">
+    <p>
+      copyright {{ currentDate.getFullYear() }} by
+      {{ author.toLowerCase() }}
+    </p>
   </div>
 </main>

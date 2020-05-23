@@ -13,10 +13,11 @@ import { Component } from "@angular/core";
 
 // this is the ES6 class - Ang7 Components are ES6 Class Componenents
 export class AppComponent {
-  // class fields
+  // class fields -- defined here and can now be used inside {{ }} in the html file
   title: string = "My angular-crash-todolist";
   name: string = "";
   author: string = "Will Cody";
+  currentDate: Date = new Date();
   // name: number = "Will Cody"; // ERROR: Type '"Will Cody"' is not assignable to type 'number'.
 
   // recall constructor() runs on init
