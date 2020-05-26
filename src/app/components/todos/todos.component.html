@@ -1,7 +1,11 @@
 <h1>My Todo List</h1>
 
-<ul *ngFor="let todo of todos">
+<!-- v2 way: use the child component and pass in props -->
+<app-todo-item *ngFor="let todo of todos" [todo]="todo"> </app-todo-item>
+
+<!-- v1 way: just loop over component data and render -->
+<!-- <ul *ngFor="let todo of todos">
   {{
     todo.title
   }}
-</ul>
+</ul> -->

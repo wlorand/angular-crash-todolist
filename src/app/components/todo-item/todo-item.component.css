@@ -1,0 +1,25 @@
+/**
+ * File: todo-item.component.css
+ * Desc: scoped styles just for the app-todo-item
+ */
+
+.del {
+  background: #f00;
+  color: #fff;
+  border: none;
+  padding: 5px 9px;
+  border-radius: 50%; /* rounded */
+  cursor: pointer;
+  float: right;
+}
+
+.todo {
+  background: #f4f4f4;
+  padding: 10px;
+  border-bottom: 1px dotted #ccc;
+}
+
+/* practice some BEM naming */
+.todo__completed {
+  text-decoration: line-through;
+}
