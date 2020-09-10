@@ -24,6 +24,7 @@ export class TodoItemComponent implements OnInit {
   }
 
   deleteTodo(todoItem) {
+    // how deal with state --for react we did local useState ...newState
     console.log("delete");
   }
 

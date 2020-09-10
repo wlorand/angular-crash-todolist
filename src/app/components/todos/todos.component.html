@@ -3,6 +3,9 @@
 <!-- v2 way: use the child component and pass in props -->
 <app-todo-item *ngFor="let todo of todos" [todo]="todo"> </app-todo-item>
 
+<!-- v3: add event emit -->
+<!-- (deleteTodo)="deleteTodo($event)" -->
+
 <!-- v1 way: just loop over component data and render -->
 <!-- <ul *ngFor="let todo of todos">
   {{

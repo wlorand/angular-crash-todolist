@@ -9,5 +9,5 @@ const routes: Routes = []; // notice ts + routes as array (empty to start)
   exports: [RouterModule],
 })
 
-// every module hgas a class
+// every module hgas a class, incl the router one
 export class AppRoutingModule {}
